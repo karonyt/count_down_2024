@@ -4,7 +4,29 @@
   </head>
   <div id="mainArea">
     <script>
-      var a = 0
+      var nowDate = new Date();
+      var dnumNow = nowDate.getTime();
+      var inputYear  = 2023
+      var inputMonth = 0
+      var inputDate  = 1
+      var inputHour  = 0
+      var inputMin   = 0
+      var inputSec   = 0
+      var targetDate = new Date( inputYear, inputMonth, inputDate, inputHour, inputMin, inputSec );
+      var dnumTarget = targetDate.getTime();
+      var diff2Dates = dnumTarget - dnumNow;
+      if( dnumTarget < dnumNow ) {
+        // 期限が過ぎた場合は -1 を掛けて正の値に変換
+        diff2Dates *= -1;
+      }
+      var dDays  = diff2Dates / ( 1000 * 60 * 60 * 24 );  // 日数
+      diff2Dates = diff2Dates % ( 1000 * 60 * 60 * 24 );
+      var dHour  = diff2Dates / ( 1000 * 60 * 60 );   // 時間
+      diff2Dates = diff2Dates % ( 1000 * 60 * 60 );
+      var dMin   = diff2Dates / ( 1000 * 60 );    // 分
+      diff2Dates = diff2Dates % ( 1000 * 60 );
+      var dSec   = diff2Dates / 1000; // 秒
+
     </script>
   
   
