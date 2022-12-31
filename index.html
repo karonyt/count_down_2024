@@ -34,8 +34,8 @@
         // まだ期限が来ていない場合
         msg = "お正月" + "までは、あと" + msg2 + "です。";
       } else if( dnumTarget == dnumNow ){
-      
-      
+        const music = new Audio('gone.mp3');
+        music.play();
       }
       else {
         // 期限が過ぎた場合
