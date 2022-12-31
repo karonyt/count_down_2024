@@ -18,12 +18,12 @@
       var inputMonth2 = 11
       var inputDate2  = 31
       var inputHour2  = 20
-      var inputMin2   = 22
+      var inputMin2   = 25
       var inputSec2   = 0
       var targetDate2 = new Date( inputYear2, inputMonth2, inputDate2, inputHour2, inputMin2, inputSec2 );
       var dnumTarget2 = targetDate2.getTime();
       var diff2Dates2 = dnumTarget2 - dnumNow;
-      if( dnumTarget2 == dnumNow ) {
+      if( diff2Dates2 == 0 ) {
         const music = new Audio('music.mp3');
         music.play();
       }
