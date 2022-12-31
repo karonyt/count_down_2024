@@ -32,11 +32,11 @@
       var msg;
       if( dnumTarget > dnumNow ) {
         // まだ期限が来ていない場合
-        msg = msg1 + "までは、あと" + msg2 + "です。";
+        msg = "お正月" + "までは、あと" + msg2 + "です。";
       }
       else {
         // 期限が過ぎた場合
-        msg = msg1 + "は、既に" + msg2 + "前に過ぎました。";
+        msg = "お正月" + "は、既に" + msg2 + "前に過ぎました。";
       }
       document.getElementById("RealtimeCountdownArea").innerHTML = msg;
     }
