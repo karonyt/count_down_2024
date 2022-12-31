@@ -44,7 +44,8 @@
       var msg;
       console.log( dnumTarget2 - dnumNow )
       if( dnumTarget2 == dnumNow ) {
-         
+         const music = new Audio('music.mp3');
+         music.play();
       }
       if( dnumTarget > dnumNow ) {
         // まだ期限が来ていない場合
