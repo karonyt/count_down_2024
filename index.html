@@ -18,7 +18,7 @@
       var inputMonth2 = 11
       var inputDate2  = 31
       var inputHour2  = 20
-      var inputMin2   = 39
+      var inputMin2   = 41
       var inputSec2   = 0
       var targetDate2 = new Date( inputYear2, inputMonth2, inputDate2, inputHour2, inputMin2, inputSec2 );
       var dnumTarget2 = targetDate2.getTime();
@@ -43,7 +43,7 @@
       var msg2 = Math.floor(dDays) + "日" + Math.floor(dHour) + "時間" + Math.floor(dMin) + "分" + Math.floor(dSec) + "秒";
       var msg;
       console.log( dnumTarget2 - dnumNow )
-      if( dnumTarget2 == dnumNow ) {
+      if( diff2Dates3 == 341 ) {
          const music = new Audio('music.mp3');
          music.play();
       }
